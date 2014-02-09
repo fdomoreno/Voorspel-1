@@ -8,59 +8,85 @@ body {
   font-family: helvetica, arial;
 }
 header {
-  background-image: url("https://d30su0b7sry5gh.cloudfront.net/repo/vj2sWdV1/images/bEoXcOGk.jpg");
-  background-size: 90% 80%;
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  border: 1px solid #f00;
+  background: #ff5d55;
+  margin: 0px auto;
   width: 80%;
-  margin: 30px auto;
-  height: 400px;
-  padding: 8px;
 }
 header nav ul li {
-  background: #ff5d55;
-  box-shadow: 2px 2px 0px rgba(0,0,0,0.5);
+  background: #ed332d;
   color: #fff;
   cursor: pointer;
   display: inline-block;
-  font-size: 20px;
-  font-weigth: bold;
-  -webkit-transform: skewX(-8deg);
-  -moz-transform: skewX(-8deg);
-  -ms-transform: skewX(-8deg);
-  -o-transform: skewX(-8deg);
-  transform: skewX(-8deg);
-  -webkit-transition: all 0.35s;
-  -moz-transition: all 0.35s;
-  -ms-transition: all 0.35s;
-  -o-transition: all 0.35s;
-  transition: all 0.35s;
-  padding: 5px 8px;
-  text-aling: left;
+  padding: 8px 8px;
+  font-weight: bold;
+  -webkit-transform: skew(-10deg);
+  position: relative;
+  left: 5%;
+  top: -18px;
+  -webkit-transition: all 0.25s;
+  -moz-transition: all 0.25s;
+  -ms-transition: all 0.25s;
+  -o-transition: all 0.25s;
+  transition: all 0.25s;
+  margin-rigth: 5px;
+  margin-top: 5px;
 }
 header nav ul li:hover {
-  background: #f7372d;
-  box-shadow: 2px 2px 0px #8f100a;
-  color: rgba(0,0,0,0.5);
-  padding: 5px 13px;
-  text-shadow: 0px 0px 0px #000;
+  box-shadow: 3px 3px 0px #8b0000;
+  padding: 8px 15px;
 }
 header h1 {
   color: #fff;
-  position: absolute;
-  top: 210px;
-  left: 15%;
-  text-shadow: 2px 2px 5px #000;
-}
-#Juegos-disponibles {
-  border: 1px solid #f00;
-  width: 80%;
-  padding: 8px;
+  border-bottom: 2px solid rgba(0,0,0,0.5);
+  padding: 5px;
+  font-weight: 300;
+  width: 90%;
   margin: 0 auto;
 }
-#Juegos-disponibles .indice {
-  width: 100%;
-  border-bottom: 2px solid #f00;
+.Imagen {
+  background: #8b0000;
+  background-size: 100% 80%;
+  background-attachment: fixed;
+  background-blend-mode: difference, normal;
+  position: relative;
+  top: 5px;
+  margin: 0 auto;
+  width: 80%;
+  height: 400px;
+}
+.descripcion {
+  background: rgba(0,0,0,0.5);
+  border-radius: 5px;
+  color: #fff;
+  position: relative;
+  left: 55%;
+  padding: 5px 5px;
+  text-align: center;
+  font-size: 20px;
+  line-height: 1.2;
+  width: 40%;
+  height: 300px;
+  position: relative;
+  top: 40px;
+}
+.descripcion h2 {
+  color: #fff;
+  font-weight: bold;
+  font-size: 30px;
+}
+.JuegosDisponibles {
+  border: 1px solid #808000;
+  width: 90%;
+  margin: 0 auto;
   padding: 5px;
+  position: relative;
+  top: 50px;
+}
+.JuegosDisponibles article {
+  border-radius: 5px;
+  border: 1px solid #f00;
+  display: inline-block;
+  padding: 5px;
+  width: 30%;
+  height: 300px;
 }
