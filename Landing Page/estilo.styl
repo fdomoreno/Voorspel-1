@@ -10,19 +10,26 @@ body
 	font-size 20px
 	font-family Lucida Sans Unicode
 	font-variant small-caps
+	max-width 960px
+	width 100%
 
 header 
 	background -webkit-linear-gradient(-85deg,#D62D26 106px ,#FF5D55 30px)
+	background-color #FF5D55
+	box-shadow 0px 3px 10px opacidad
 	color #fff
 	position fixed
 	top 0px 
 	left 0px
 	width 100%
 	z-index 200
-header h1
-	text-align center
-	text-shadow 2px -1px 0px darkred
+	
 
+
+header h1
+	cursor pointer
+	text-align center
+	
 header a 
 	color white
 	text-decoration none
@@ -31,7 +38,8 @@ header a
 header nav ul li 
 	display inline-block
 	border-left 1px solid #fff
-	margin-right 2px	
+	margin-right 2px
+	margin-top 2px 	
 	text-align center
 	padding 3px 10px
 	-webkit-transition all 0.25s
@@ -42,6 +50,7 @@ header nav ul li
 	
 header nav 
 	text-align center
+	margin-top -24px
 
 header nav ul li:hover
 	padding 3px 15px
@@ -54,3 +63,75 @@ header nav ul li:first-child
 
 header nav ul li:last-child
 	border-right 2px solid #fff
+
+.wallpapper-zone
+	background darkred
+	margin 0 auto
+	max-width 100%
+	height 500px
+
+.juegos
+	border-left 2px solid opacidad
+	border-right 2px solid opacidad
+	width 100%
+	height 500px
+	text-align center
+	position relative
+	left 20%
+
+.juegos article
+	border 2px solid #d62d26
+	border-radius 5px 
+	display inline-block
+	width 25%
+	padding 10px
+	margin 10px
+
+
+.juegos span 
+	background #d62d26  
+	border-radius 7px
+	color white
+	padding 5px 
+	position relative
+	top 15px 
+	-webkit-transition all 0.25s
+	-moz-transition all 0.25s
+	-ms-transition all 0.25s
+	-o-transition all 0.25s
+	transition all 0.25s
+
+
+.juegos span:hover 
+	background darkred
+
+.juegos a 
+	color #fff
+	text-decoration none
+
+
+
+
+
+
+@media screen and (max-width:480px)
+
+	header nav ul li 
+		display block
+		border-top 1px solid white
+		border-left none
+		border-right none
+		cursor pointer
+		margin 0px auto
+		width 80%
+
+	header nav ul li:hover
+		border-top 1px solid darkred
+		padding 5px 16px
+
+
+
+	header nav ul li:last-child
+		border-right none
+	header nav ul li:first-child
+		border-left none
