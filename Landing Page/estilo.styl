@@ -6,94 +6,51 @@ Pulpo-Color=#FF5D55
 	padding 0
 
 body
-	background silver
+	background #fff
 	font-size 20px
-	font-family helvetica,arial
+	font-family Lucida Sans Unicode
+	font-variant small-caps
 
 header 
-	background #FF5D55
-	margin 0px auto
-	width 80%
+	background -webkit-linear-gradient(-85deg,#D62D26 106px ,#FF5D55 30px)
+	color #fff
+	position fixed
+	top 0px 
+	left 0px
+	width 100%
+	z-index 200
+header h1
+	text-align center
+	text-shadow 2px -1px 0px darkred
 
-header nav ul li 
-	background #ed332d
+header a 
 	color white
-	cursor pointer
+	text-decoration none
+	text-shadow 1px 1px 0px rgb(255, 113, 113)
+	
+header nav ul li 
 	display inline-block
-	padding 8px 8px
-	font-weight bold
-	-webkit-transform skew(-10deg)
-	position relative
-	left 5%
-	top -18px
+	border-left 1px solid #fff
+	margin-right 2px	
+	text-align center
+	padding 3px 10px
 	-webkit-transition all 0.25s
 	-moz-transition all 0.25s
 	-ms-transition all 0.25s
 	-o-transition all 0.25s
 	transition all 0.25s
-	margin-rigth 5px
-	margin-top 5px
-
-
+	
+header nav 
+	text-align center
 
 header nav ul li:hover
-	box-shadow 3px 3px 0px darkred
-	padding 8px 15px
+	padding 3px 15px
 
+header nav ul li:hover a 
+	color darkred
 
+header nav ul li:first-child
+	border-left 2px solid #fff
 
-header h1
-	color white
-	border-bottom 2px solid opacidad
-	padding 5px
-	font-weight 300
-	width 90%
-	margin 0 auto
-
-
-.Imagen
-	background darkred
-	background-size 100% 80%
-	background-attachment fixed
-	background-blend-mode difference, normal
-	position relative 
-	top 5px
-	margin 0 auto
-	width 80%
-	height 400px
-
-.descripcion
-	background opacidad
-	border-radius 5px
-	color white
-	position relative
-	left 55%
-	padding 5px 5px
-	text-align center 
-	font-size 20px
-	line-height 1.2
-	width 40%
-	height 300px
-	position relative
-	top 40px
-
-.descripcion h2 
-	color white
-	font-weight bold
-	font-size 30px
-
-.JuegosDisponibles
-	border 1px solid olive
-	width 90%
-	margin 0 auto
-	padding 5px
-	position relative 
-	top 50px
-
-.JuegosDisponibles article
-	border-radius 5px
-	border 1px solid red
-	display inline-block
-	padding 5px
-	width 30%
-	height 300px
+header nav ul li:last-child
+	border-right 2px solid #fff
