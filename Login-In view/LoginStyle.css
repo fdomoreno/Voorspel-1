@@ -1,0 +1,154 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+body {
+  background: #fff;
+  font-family: Lucida Sans Unicode;
+  font-size: 18px;
+}
+a {
+  color: rgba(0,0,0,0.5);
+  text-decoration: none;
+}
+a:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+header {
+  background: #fff;
+  color: #e74c3c;
+  padding: 4px 0px;
+  text-align: center;
+  font-variant: small-caps;
+  line-height: 1.4;
+  margin-top: 50px;
+  font-size: 16px;
+  width: 100%;
+  heigth: 200px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 200;
+}
+header h1 {
+  font-weight: 100;
+  border-bottom: 1px solid #e74c3c;
+  width: 50%;
+  margin: 0 auto;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+header h1:hover {
+  border-bottom: 2px solid #e74c3c;
+  cursor: default;
+}
+header h2 {
+  color: #c0c0c0;
+  font-size: 40px;
+  font-weight: 100;
+}
+header nav ul li {
+  font-size: 18px;
+}
+section {
+  background: #e74c3c;
+  border-radius: 5px;
+  color: #fff;
+  padding: 5px 0px;
+  position: relative;
+  top: 200px;
+  height: auto;
+  width: 60%;
+  margin: 0 auto;
+  text-align: center;
+}
+section article {
+  padding: 5px;
+  font-size: 16px;
+}
+#formulario-enter {
+  text-align: left;
+  margin-top: 20px;
+  margin-left: 50px;
+}
+#formulario-enter label {
+  color: rgba(255,255,255,0.45);
+  font-size: 16px;
+}
+#formulario-enter input {
+  display: block;
+  border-radius: 20px;
+  border: none;
+  padding: 5px 10px;
+  font-size: 20px;
+  margin: 10px auto;
+  outline: none;
+}
+#formulario-enter input[type="submit"] {
+  background: #e42f1d;
+  box-shadow: 0px 2px 0px rgba(0,0,0,0.5);
+  cursor: pointer;
+  color: #fff;
+  margin-top: 30px;
+  -webkit-transition: all 3s;
+  -moz-transition: all 0.35s;
+  -ms-transition: all 0.35s;
+  -o-transition: all 0.35s;
+  transition: all 0.35s;
+  width: 32%;
+}
+#formulario-enter input[type="submit"]:hover {
+  background: rgba(0,0,0,0.5);
+}
+.seccion-enter a {
+  background: #f00;
+  display: block;
+}
+footer {
+  background: #fff;
+  border-bottom: 1px solid #e74c3c;
+  padding: 8px 5px;
+  position: relative;
+  top: 225px;
+  margin: 0 auto;
+  width: 50%;
+  text-align: center;
+  font-variant: small-caps;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+footer:hover {
+  border-bottom: 2px solid #e74c3c;
+}
+footer p {
+  color: rgba(0,0,0,0.5);
+  font-size: 20px;
+}
+footer a {
+  color: #e74c3c;
+  display: block;
+  font-size: 28px;
+  margin-top: 8px;
+}
+@media screen and (max-width:660px) {
+  #formulario-enter {
+    text-align: center;
+    margin-left: 0px;
+  }
+  #formulario-enter input {
+    width: 60%;
+  }
+}
+@media screen and (max-width:370px) {
+  #formulario-enter input,
+  #formulario-enter input[type="submit"] {
+    width: 90%;
+  }
+}
