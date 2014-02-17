@@ -1,115 +1,153 @@
-opacidad=rgba(0,0,0,0.5)
-Pulpo-Color=#FF5D55
-
 *
-	margin 0
-	padding 0
+  margin: 0
+  padding: 0
 
 body
-	background #fff
-	font-size 20px
-	font-family Lucida Sans Unicode
-	max-width 960px
-	width 100%
+  background: #fff
+  font-size: 20px
+  font-family: Lucida Sans Unicode
 
-header 
-	background #F0F0F0
-	color #FF5D55
-	position fixed
-	top 0px 
-	left 0px
-	width 100%
-	height auto
-	z-index 200
-	font-variant small-caps
-	font-size 16px 
+header
+  background: #fd9287
+  color: #fff
+  padding: 8px
+  font-size: 16px
+  text-align: center
+  width: 80%
+  margin: 0 auto
+
+#wallpapper-zone
+  background: #333
+  width: 80%
+  height: 300px
+  margin: 10px auto
+
+#Seccion-articulos
+  color: #fff
+  width: 80%
+  height: 400px
+  margin: 0 auto
+
+#Seccion-articulos .title
+  border-top: 20px solid #fd9287
+  border-right: 20px solid transparent
+  border-bottom: 20px solid #eb6052
+  color: #eb6052
+  padding: 5px
+  text-align: left
+  font-size: 18px
+  -webkit-transition: all 0.25s
+  -moz-transition: all 0.25s
+  -ms-transition: all 0.25s
+  -o-transition: all 0.25s
+  transition: all 0.25s
+  width: 30%
+ 
+#Seccion-articulos .title:hover
+  text-shadow: 0px 1px 0px #fff
+  border-top: 20px solid #a82117
+  border-bottom: 20px solid #a82117
+  cursor: pointer
+
+#Seccion-articulos ul
+  text-align: center
+
+#Seccion-articulos ul ol
+  background: #eb6052
+  border-bottom: 2px solid #a82117
+  display: inline-block
+  cursor: pointer
+  padding: 20px 5px
+  text-align: center
+  margin-top: 50px
+  margin-left: 10px
+  line-height: 1.5
+  -webkit-transition: all 0.5s
+  -moz-transition: all 0.5s
+  -ms-transition: all 0.5s
+  -o-transition: all 0.5s
+  transition: all 0.5s
+  width: 30%
+
+#Seccion-articulos ul ol:hover
+  border-bottom: 5px solid #a82117
+  background: #eb6052
+
+#Seccion-articulos ul ol:hover .hora
+  border-bottom: 2px solid #fff
+
+#Seccion-articulos ul ol div
+  background-repeat: no-repeat
+  background-position: center
+  background-size: 100% 100%
+  background-color: #fff
+  border-radius: 50%
+  box-shadow: 2px 3px 0px rgba(0,0,0,0.5)
+  display: inline-block
+  margin-top: 8px
+  -moz-border-radius: 50%
+  -webkit-border-radius: 50%
+  width: 40%
+  height: 120px
+
+#Seccion-articulos ul ol div p
+  margin-top: -30px
+  font-size: 16px
+
+#Seccion-articulos ul ol .hora
+  border-bottom: 1px solid #fff
+  padding: 3px 30%
+  -webkit-transition: all 0.25s
+  -moz-transition: all 0.25s
+  -ms-transition: all 0.25s
+  -o-transition: all 0.25s
+  transition: all 0.25s
+
+#Seccion-articulos ul ol .pozo
+  color: rgba(0,0,0,0.5)
+  font-size: 16px
+
+#Seccion-articulos ul ol button
+  background: #a82117
+  border-radius: 50px
+  border: none
+  border-bottom: 2px solid rgba(0,0,0,0.5)
+  color: #fff
+  cursor: pointer
+  font-size: 16px
+  padding: 10px 15%
+  position: relative
+  top: 10px
+  height: auto
+  -webkit-transition: all 0.5s
+  -moz-transition: all 0.5s
+  -ms-transition: all 0.5s
+  -o-transition: all 0.5s
+  transition: all 0.5s
+  outline: none
+
+#Seccion-articulos ul ol button:hover
+  background: #8b0000
+  border: none
+
+#Seccion-articulos ul ol small
+  position: relative
+  top: 10px
+
+@media screen and (max-width:920px)
+    #Seccion-articulos ul ol
+      padding 55px 5px 
+      margin 30px auto
+      margin-left 10px
+      width 40%
+
+@media screen and (max-width:612px)
+    #Seccion-articulos ul ol
+      width 80%
+@media screen and (max-width:312px)
+    #Seccion-articulos ul ol
+      width 100%
+      
 
 
-header h1
-	cursor pointer
-	text-align center
-	font-weight 100
-	
-header a 
-	color opacidad
-	text-decoration none
-	
-header nav ul li 
-	display inline-block
-	border-left 1px solid Pulpo-Color
-	color opacidad
-	margin-right 2px
-	margin-top 10px 	
-	text-align center
-	padding 5px 8px
-	-webkit-transition all 0.25s
-	-moz-transition all 0.25s
-	-ms-transition all 0.25s
-	-o-transition all 0.25s
-	transition all 0.25s
-	
-header nav 
-	text-align right
-	margin-top -24px
-	padding 0px 20px 
 
-header h2 
-	color opacidad
-	text-align center
-	font-size 20px 
-
-header nav ul li:hover
-	padding 0px 10px
-
-
-header nav ul li:hover a 
-	color darkred
-
-header nav ul li:first-child
-	border-left 2px solid Pulpo-Color
-
-header nav ul li:last-child
-	border-right 2px solid Pulpo-Color
-
-.wallpapper-zone
-	background darkred
-	margin 0 auto
-	width 100%
-	height 50px
-	position relative 
-	top 30px
-	left 0px
-
-
-
-@media screen and (max-width:550px)
-
-	header 
-		background-image -webkit-linear-gradient(-85deg,#D62D26 106px ,#FF5D55 30px)
-		background-color #FF5D55
-		padding 20px 0px 
-	header h1,h2 
-		color #fff
-
-	header nav ul li 
-		display block
-		border-top 1px solid white
-		border-left none
-		border-right none
-		cursor pointer
-		margin 0px auto
-		width 80%
-		position relative
-		top 20px
-
-
-	header nav ul li:hover
-		border-top 1px solid darkred
-		padding 5px 16px
-
-
-
-	header nav ul li:last-child
-		border-right none
-	header nav ul li:first-child
-		border-left none

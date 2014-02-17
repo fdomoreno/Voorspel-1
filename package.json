@@ -1,0 +1,10 @@
+{
+	"name":"vorspel",
+	"version":"0.0.1",
+	"devDependencies":{
+		"nodemon":"*"
+	},
+	"scripts":{
+		"start":"nodemon app.js"
+	}
+}
