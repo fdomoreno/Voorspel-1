@@ -3,10 +3,11 @@
   padding: 0;
 }
 body {
-  background: #fff;
+  background: #e7e7e7;
   width: 1000px;
   font-size: 20px;
-  font-family: Lucida Sans Unicode;
+  font-family: Open Sans sans-serif;
+  margin: 0 auto;
 }
 header {
   background: #fd9287;
@@ -30,9 +31,9 @@ header {
   margin: 0 auto;
 }
 #Seccion-articulos .title {
-  border-top: 20px solid #fd9287;
-  border-right: 20px solid transparent;
-  border-bottom: 20px solid #eb6052;
+  border-top: 5px solid #fd9287;
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid #fd9287;
   color: #eb6052;
   padding: 5px;
   text-align: left;
@@ -42,27 +43,25 @@ header {
   -ms-transition: all 0.25s;
   -o-transition: all 0.25s;
   transition: all 0.25s;
-  width: 30%;
+  width: 38%;
 }
 #Seccion-articulos .title:hover {
-  text-shadow: 0px 1px 0px #fff;
-  border-top: 20px solid #a82117;
-  border-bottom: 20px solid #a82117;
+  border-top: 8px solid #fd9287;
+  border-bottom: 8px solid #eb6052;
   cursor: pointer;
 }
 #Seccion-articulos ul {
   text-align: center;
 }
 #Seccion-articulos ul ol {
-  background: #ccc;
-  border-bottom: 2px solid #aaa;
-  border: 1px solid #aaa;
-  border-bottom: 2px solid #999;
+  background: #fff;
+  border-bottom: 2px solid #f98c81;
+  border-radius: 2px;
   display: inline-block;
   cursor: pointer;
   padding: 20px 5px;
   text-align: center;
-  margin-top: 50px;
+  margin-top: 20px;
   margin-left: 10px;
   line-height: 1.5;
   -webkit-transition: all 0.5s;
@@ -70,13 +69,15 @@ header {
   -ms-transition: all 0.5s;
   -o-transition: all 0.5s;
   transition: all 0.5s;
-  text-shadow: 1px 1px 0px #eee;
   width: 30%;
 }
+#Seccion-articulos ul ol:last-child {
+  display: none;
+}
 #Seccion-articulos ul ol:hover {
-  border-bottom: 5px solid #999;
-  background: #aaa;
-  text-shadow: none;
+  border-bottom: 5px solid #eb6052;
+  background: #f98c81;
+  color: #fff;
 }
 #Seccion-articulos ul ol div {
   background-repeat: no-repeat;
@@ -113,14 +114,14 @@ header {
   font-size: 16px;
 }
 #Seccion-articulos ul ol button {
-  background: #a82117;
+  background: #f98c81;
   border-radius: 50px;
   border: none;
   border-bottom: 2px solid rgba(0,0,0,0.5);
   color: #fff;
   cursor: pointer;
-  font-size: 16px;
-  padding: 10px 15%;
+  font-size: 14px;
+  padding: 8px 15%;
   position: relative;
   top: 10px;
   height: auto;
@@ -132,8 +133,11 @@ header {
   outline: none;
 }
 #Seccion-articulos ul ol button:hover {
-  background: #8b0000;
+  background: #eb6052;
   border: none;
+}
+#Seccion-articulos ul ol:hover button {
+  background: #eb6052;
 }
 #Seccion-articulos ul ol small {
   position: relative;
