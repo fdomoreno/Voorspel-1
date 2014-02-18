@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title> pruebas devalidaciones </title>
+</head>
+<body>
+
+
+<form name="formulario" action="javascript:console.log('enviado')">
+	
+<label>Nombre</label>
+<input type="text" name="nombre" pattern="[ A-Z a-z ]{2,15}" maxLength="15" required placeholder="escribe tu nombre" oninput="verifica()" >
+
+
+</form>
+
+
+<style>
+
+
+input:valid{
+	background:url('https://cdn1.iconfinder.com/data/icons/freeapplication/png/24x24/Yes.png');
+	background-repeat:no-repeat;
+	background-position:98% 4px;
+	background-size:10px 10px;
+}
+
+input:invalid{
+	outline:1px solid red;
+}
+
+
+
+</style>
+
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>	
+<script >
+
+
+function verifica(){
+
+var valido=document.formulario.nombre.checkValidity();
+
+	if( valido ){
+		console.log("bien")
+	}else{
+		console.log("mal")
+	}
+}
+
+
+
+</script>
+	
+</body>
+</html>
