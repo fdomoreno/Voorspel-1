@@ -3,7 +3,7 @@ $(document).on('ready',function(){
 
 var obj=$("ol:nth-child(1)")
 ,	path="#Seccion-articulos ul"
-,	array=['green','black','red','olive','darkred']
+,	array=['green','black','red','olive','darkred','tan','wheat']
 , 	indice=1
 
 for( var i=0;i<array.length;i++ ){
