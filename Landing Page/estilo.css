@@ -57,7 +57,7 @@ header {
   background: #ccc;
   border-bottom: 2px solid #aaa;
   border: 1px solid #aaa;
-  border-radius: 3px;
+  border-bottom: 2px solid #999;
   display: inline-block;
   cursor: pointer;
   padding: 20px 5px;
