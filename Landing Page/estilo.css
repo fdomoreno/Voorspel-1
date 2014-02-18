@@ -4,6 +4,7 @@
 }
 body {
   background: #fff;
+  width: 1000px;
   font-size: 20px;
   font-family: Lucida Sans Unicode;
 }
@@ -23,7 +24,7 @@ header {
   margin: 10px auto;
 }
 #Seccion-articulos {
-  color: #fff;
+  color: #444;
   width: 80%;
   height: 400px;
   margin: 0 auto;
@@ -53,8 +54,10 @@ header {
   text-align: center;
 }
 #Seccion-articulos ul ol {
-  background: #eb6052;
-  border-bottom: 2px solid #a82117;
+  background: #ccc;
+  border-bottom: 2px solid #aaa;
+  border: 1px solid #aaa;
+  border-radius: 3px;
   display: inline-block;
   cursor: pointer;
   padding: 20px 5px;
@@ -67,14 +70,13 @@ header {
   -ms-transition: all 0.5s;
   -o-transition: all 0.5s;
   transition: all 0.5s;
+  text-shadow: 1px 1px 0px #eee;
   width: 30%;
 }
 #Seccion-articulos ul ol:hover {
-  border-bottom: 5px solid #a82117;
-  background: #eb6052;
-}
-#Seccion-articulos ul ol:hover .hora {
-  border-bottom: 2px solid #fff;
+  border-bottom: 5px solid #999;
+  background: #aaa;
+  text-shadow: none;
 }
 #Seccion-articulos ul ol div {
   background-repeat: no-repeat;
@@ -95,13 +97,16 @@ header {
   font-size: 16px;
 }
 #Seccion-articulos ul ol .hora {
-  border-bottom: 1px solid #fff;
-  padding: 3px 30%;
+  border-bottom: 1px solid #aaa;
+  padding: 3px 25%;
   -webkit-transition: all 0.25s;
   -moz-transition: all 0.25s;
   -ms-transition: all 0.25s;
   -o-transition: all 0.25s;
   transition: all 0.25s;
+}
+#Seccion-articulos ul ol:hover .hora {
+  border-bottom: 1px solid #fff;
 }
 #Seccion-articulos ul ol .pozo {
   color: rgba(0,0,0,0.5);
