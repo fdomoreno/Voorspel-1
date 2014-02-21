@@ -33,7 +33,7 @@ header {
 #Seccion-articulos .title {
   border-top: 5px solid #fd9287;
   border-right: 5px solid transparent;
-  border-bottom: 5px solid #fd9287;
+  /* border-bottom: 5px solid #fd9287; */
   color: #eb6052;
   padding: 5px;
   text-align: left;
@@ -43,7 +43,7 @@ header {
   -ms-transition: all 0.25s;
   -o-transition: all 0.25s;
   transition: all 0.25s;
-  width: 38%;
+  width: 84%;
 }
 #Seccion-articulos .title:hover {
   border-top: 8px solid #fd9287;

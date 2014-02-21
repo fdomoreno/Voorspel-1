@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Administrador</title>
+	<link rel="stylesheet" href="AdminStyle.css">
+</head>
+
+<header>
+	<nav>
+		<ul>
+			<li>Administrador</li>
+			<li>Usuarios y Transacciones</li>
+			<li>Juegos</li>
+			<li> <a href="#">cerrar sesion</a> </li>
+		</ul>
+	</nav>
+
+	<h1>Torneos y juegos
+		
+	</h1>
+
+</header>
+
+<body>
+
+	<section id="SeccionGames">
+		
+		<span class="SelecTorneos">Selecciona torneos</span>
+		<span class="SelecJuegos">Seleciona juegos</span>
+
+		<article class="Torneos">Torneos
+		
+		<button class="NewTorneo">new torneo</button>
+		
+		</article>
+		
+		<article class="Juegos">Juegos
+		
+		<button class="NewGame">new game</button>
+
+		<div class="Contenedor-Formulario">
+		
+
+		<form action="javascript:console.log('nuevo juego')">
+			
+			<label>Equipo Local</label>
+			<input type="text" name="Equipo1" required placeholder="Escribe el nombre del equipo aqui"  > 
+			<input type="file" name="EscudoEquipo1" required accept="image/*">
+
+
+			<label>Equipo Visitante</label>
+			
+			<input type="text" name="Equipo1" required placeholder="Escribe el nombre del equipo aqui" >
+			
+			<input type="file" name="EscudoEquipo2" required accept="image/*">
+
+		<select>
+		  <option value="volvo">Volvo</option>
+ 		  <option value="saab">Saab</option>
+		  <option value="opel">Opel</option>
+		  <option value="audi">Audi</option>
+		
+		</select>
+		<time datetime="2012-10-16T09:00" pubdate="pubdate">16 de octubre de 2012 a las 9h</time>
+		<br>
+		<label >Precio</label>
+  		<input type="number" name="precio" >
+
+		</form>
+		
+		</div>
+
+
+
+
+		</article>
+
+
+	</section>
+
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script src="./AdminMain.js"></script>
+	
+</body>
+</html>
