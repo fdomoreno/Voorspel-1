@@ -1,0 +1,101 @@
+
+/*titulo clase*/
+/*end titulo clase*/
+
+/*text message icon*/
+.text_message_box{
+	width:33%;
+	max-width: 280px;
+	min-width: 180px;
+	height: 180px;
+	background: #eee;
+}/*end text message icon*/
+.text_message_box_icon{
+	background-color: #339966;
+	float: left;
+	width:80%;
+}
+.message_error{	
+}
+.message_warning{
+}
+.message_noticiations{
+}
+.margin_for_title{
+ padding-top: 20px;
+ padding-bottom: 10px;
+ padding-left:20px;
+ display: block;
+}
+.text_to_message_format{
+	padding-top: 70px;
+ 	padding-bottom: 10px;
+}
+.margin_icon_close{
+	padding-top: 10px;
+ 	padding-bottom: 11px;
+}
+.text_message_box_icon em{
+	text-align: left;
+}
+.icon_to_close{ 
+	width:20%;
+	float: left;
+	background: red;
+}
+.icon_to_close img{
+	background-color: green;
+	width:27px;
+	height: 27px;
+}
+.btn_loggin_general{
+	color:#666;
+	font-size:0.8em;
+	width: 80px;
+	height: 32px;
+	margin: 10px;
+	border: 0;
+	box-shadow: -2px 2px 3px 1px #aaa;
+}
+.btn_loggin_type1{
+	color:#ccc;
+	font-size:0.2em;
+}
+.btn_loggin_type2{
+}
+.btn_loggin_type3{
+	color:#666;
+	font-size:0.8em;
+	width: 80px;
+	height: 32px;
+	margin: 10px;
+	border: 0;
+	box-shadow: -2px 2px 3px 1px #aaa;
+}
+.header_title_and_icon{
+}
+/*box shadow*/
+.box_shadow{
+	box-shadow: -3px 3px 2px 2px #ddd;
+	-mox-box-shadow: -3px 3px 2px 2px #ddd;
+	-webkit-box-shadow: -3px 3px 2px 2px #ddd;
+	-o-box-shadow: -3px 3px 2px 2px #ddd;
+	-ms-box-shadow: -3px 3px 2px 2px #ddd;
+}/*end box shadow*/
+
+/*border box radius*/
+.border_radius{
+	border-radius: 5px;
+	-webkit-border-radius:5px;
+	-ms-border-radius:5px;
+	-moz-border-radius:5px;
+	-o-border-radius:5px;
+}/*end box border radius*/
+/*border box left and bottom*/
+.border_side_left_bottom{
+	border-left:1px solid #eee;
+	border-bottom: 1px solid #eee;
+}/*end border box left and bottom*/
+button{
+	cursor: pointer;
+}
