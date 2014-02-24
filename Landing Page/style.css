@@ -19,7 +19,6 @@ a {
 /*end texto resaltado*/
 /*titulo de los equipos*/
 .texto_titulo_equipos {
-  color: #000;
   font-size: 0.9em;
 }
 /*end texto de los equipos*/
@@ -32,7 +31,7 @@ a {
 /*Indicador de la hora del partido en juego */
 .texto_hora_partido {
   line-height: 3;
-  font-size: 0.8em;
+  font-size: 1em;
 }
 /*end hora del partido*/
 /*Contenedor de cajas versus*/
@@ -54,8 +53,9 @@ a {
 /*caja de quipos a enfrentados*/
 .caja_versus {
   background: #fff;
-  box-shadow: -4px 4px 0px #969696;
   display: inline-block;
+  border-bottom: 3px solid #00a478;
+  cursor: default;
   padding: 0.5em 5px;
   max-width: 280px;
   width: 33%;
@@ -66,18 +66,52 @@ a {
   word-break: break-word;
   margin: 15px auto;
   margin-left: 10px;
+  overflow: hidden;
+  -webkit-transition: all linear 0.35s;
+  -moz-transition: all linear 0.35s;
+  -ms-transition: all linear 0.35s;
+  -o-transition: all linear 0.35s;
+  transition: all linear 0.35s;
+}
+.caja_versus:hover {
+  border-bottom: 5px solid rgba(0,0,0,0.5);
+  color: #fff;
+  -webkit-animation: versus forwards 0.5s;
+}
+.caja_versus:hover .formulario_marcador label {
+  display: block;
+}
+.caja_versus:hover .formulario_marcador input {
+  display: inline-block;
+}
+.caja_versus:hover .texto_titulo_equipos {
+  color: rgba(0,0,0,0.5);
+}
+.caja_versus:hover .iconos_bandera {
+  margin: 135px auto;
 }
 /*end caja de quipos a enfrentados*/
 .boton_acción {
+  background: #999;
   border: none;
   border-radius: 40px;
-  box-shadow: -4px 4px 0px rgba(0,0,0,0.5);
+  box-shadow: 0px 4px 0px rgba(0,0,0,0.5);
   cursor: pointer;
   color: #000;
   max-width: 300px;
   width: 80%;
   height: 30px;
   outline: none;
+  -webkit-transition: all 0.25s;
+  -moz-transition: all 0.25s;
+  -ms-transition: all 0.25s;
+  -o-transition: all 0.25s;
+  transition: all 0.25s;
+}
+.boton_acción:hover {
+  background: rgba(0,0,0,0.5);
+  box-shadow: 0px 0px 0px rgba(0,0,0,0.5);
+  color: #fff;
 }
 .iconos_bandera {
   padding: 1em 0px;
@@ -86,6 +120,11 @@ a {
   max-width: 260px;
   height: 80px;
   text-align: center;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.55s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
 }
 .iconos_bandera img {
   background: #008000;
@@ -94,3 +133,36 @@ a {
   height: 60px;
   width: 60px;
 }
+.seccion_exito {
+  background: #00a478;
+  cursor: default;
+  display: block;
+  padding: 5px;
+  margin: -125px auto;
+  width: 80%;
+  height: 250px;
+}
+.formulario_marcador label {
+  display: none;
+  margin-top: 100px;
+}
+.formulario_marcador input {
+  display: none;
+  margin: 30px 25px;
+  height: 40px;
+  width: 40px;
+}
+/*animaciones de los items*/
+/*animacion de la caja versus*/
+@-webkit-keyframes versus {
+  0% {
+    background: #fff;
+  }
+
+  100% {
+    background: rgba(0,0,0,0.5);
+    padding: 3em 5px;
+  }
+}
+/*end animacion de la caja versus*/
+/*end animaciones de los items*/

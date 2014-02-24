@@ -3,15 +3,18 @@
 <head>
 	<meta charset="UTF-8">
 
-	<title>Welcome | Bienvenido</title>
-	<link rel="stylesheet" href="estilo.css">
+	<title>Welcome | Bienvenido</title>	
+	
 	<link rel="stylesheet" href="base.css">
 	<link rel="stylesheet" href="style.css">
+
 </head>
 <body>
+
+
 <section id="games_publish">
 	<!-- text notification box to login -->
-	<div class="text_message_box border_side_left_bottom box_shadow border_radius">
+		<div class="text_message_box border_side_left_bottom box_shadow border_radius">
 		<div class="text_message_box_icon">
 			<em class="margin_for_title">Ocurrio un error</em>
 		</div>
@@ -21,21 +24,52 @@
 		<p class="text_to_message_format">Deberias iniciar sessión o crear una cuenta</p>
 		<button class="btn_loggin_type3 border_radius">Login</button>
 		<button class="btn_loggin_type3 border_radius">Register</button>
-	</div><!-- end notification box to login -->
+
+</div><!-- end notification box to login -->
+
+
+<!-- box versus -->
+
 <div class="caja_versus" >
 
-	<div class="iconos_bandera">
+		<div class="seccion_exito">
+			transformaciond el la caja para apostar
+		
+		<form class="formulario_marcador" action="javascript:console.log('pronostico de el marcador')">
+			<label>Marcador</label>
+			<input class="marcador_equipo1" type="number" required >
+
+			<input class="marcador_equipo2" type="number" required >
+
+		</form>
+
+		</div>
+
+		<div class="iconos_bandera">
 		<img>
 		<em>VS</em>
 		<img>
-	<em class="texto_titulo_equipos"> TextoTituloEquipos</em>
-	</div>
-	<p class="texto_hora_partido">Texto hora partido</p>
-	<button class="boton_acción">Haz tu pronostico</button>	
-	<p class="texto_pozo_creditos" >texto pozo creditos</p>
+		<em class="texto_titulo_equipos"> TextoTituloEquipos</em>
+		</div>
+		<p class="texto_hora_partido">Texto hora partido</p>
+		<button class="boton_acción">Haz tu pronostico</button>	
+		<p class="texto_pozo_creditos" >texto pozo creditos</p>
+
 </div>
 
+
+
+<!-- end box versus -->
+
 </section>
+
+
+
+
+
+
+
+
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
 <script src="./main.js"></script>
 	
