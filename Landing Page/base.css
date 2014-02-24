@@ -15,12 +15,15 @@
 	float: left;
 	width:80%;
 }
-.message_error{	
+/*messages error and notifications*/
+.message_error{
 }
 .message_warning{
 }
 .message_noticiations{
 }
+/*end messages error and notifications*/
+/*text messages format*/
 .margin_for_title{
  padding-top: 20px;
  padding-bottom: 10px;
@@ -35,9 +38,15 @@
 	padding-top: 10px;
  	padding-bottom: 10px;
 }
+.text_message_box p{
+	width:90%;
+	margin:0 auto;
+}
+/*end text message format*/
 .text_message_box_icon em{
 	text-align: left;
 }
+/*icon image to close div*/
 .icon_to_close{ 
 	width:20%;
 	float: left;
@@ -47,7 +56,8 @@
 	background-color: green;
 	width:27px;
 	height: 27px;
-}
+}/*end image to close div*/
+/* buttons general and types*/
 .btn_loggin_general{
 	color:#666;
 	font-size:0.8em;
@@ -71,9 +81,7 @@
 	margin: 10px;
 	border: 0;
 	box-shadow: -2px 2px 3px 1px #aaa;
-}
-.header_title_and_icon{
-}
+}/*end button general and types*/
 /*box shadow*/
 .box_shadow{
 	box-shadow: -3px 3px 2px 2px #ddd;
@@ -96,6 +104,10 @@
 	border-left:1px solid #eee;
 	border-bottom: 1px solid #eee;
 }/*end border box left and bottom*/
+.button_container{
+	margin:0 auto;
+	width: 80%;
+}
 button{
 	cursor: pointer;
 }

@@ -3,7 +3,10 @@
   margin: 0px;
 }
 body {
+  width:100%;
+  max-width: 1024px;
   background: #fff;
+  margin:0 auto;
   font-family: helvetica;
 }
 a {
@@ -58,7 +61,7 @@ a {
   cursor: default;
   padding: 0.5em 5px;
   max-width: 280px;
-  width: 33%;
+  width: 30%;
   max-width: 280px;
   height: 220px;
   line-height: 1.5;
